@@ -132,6 +132,7 @@ li:hover {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 a:visited {
@@ -445,9 +446,9 @@ footer ul li:first-child {
 }
 
 .select-language {
-    border: 0;
-    background: none;
-    color: white;
+    border-style: none;
+    background-color: var(--dark);
+    color: var(--light);
 }
 select option[value="0"] {
     background: rgba(0, 0, 0, .5);
