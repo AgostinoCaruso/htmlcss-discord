@@ -7,16 +7,15 @@
 /* general */
 :root {
     --padding-standard: 15px;
-    --padding-spacing-section:200px;
+    --padding-spacing-section:100px;
     /* color */
     --dark: #23272a;
     --light: #f6f6f6;
     --blue-bg: #255EE9;
     --text-blue: #748adb;
-    background-color: gainsboro;
 }
 .spacing-between-section{
-    padding-top: var(--padding-spacing-section);
+    padding: var(--padding-spacing-section);
 }
 /* text */
 .txt-white {
@@ -34,7 +33,6 @@
 /* background */
 .bg-blue {
     background-color: var(--blue-bg);
-    
 }
 
 .bg-white {
@@ -49,19 +47,19 @@
     background-color: var(--dark);
 }
 
-.debugger {
+/* .debugger {
     border: 1px solid red;
-}
+} */
 
 .button {
     background-color: white;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: .8em;
     margin: 4px 2px;
-    border-radius: 20px;
+    border-radius: 30px;
     box-shadow: none;
     transition: box-shadow .5s;
 }
@@ -105,10 +103,6 @@ a {
 
 a:visited {
     color: inherit;
-}
-
-.auto-center {
-    margin: 0 auto;
 }
 
 /* flex */
@@ -164,12 +158,13 @@ a:visited {
 .container-1200px {
     max-width: 1400px;
     /* Clelia ha aggiunto margine e padding */
-    /* margin:0 auto; */
+    margin:0 auto;
     /* padding:20px 10px; */
 }
 
 .container-800px {
     max-width: 800px;
+    margin:0 auto;
 }
 
 /* body */
@@ -194,7 +189,17 @@ body .button{
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+.wave{
+    background-image: url(../img/wave.svg);
+    height: 200px;
+    opacity: 0.04;
+}
+#wave-reverse{
+    transform: scaleY(-1);
+}
+#meet-padding-none{
+    padding-top: 0px;
+}
 /* panel */
 .img-panel {
     width: 60%;
@@ -204,6 +209,9 @@ body .button{
 }
 .txt-panel {
     width: 40%;
+}
+.button-hero .button{
+    font-size: 1.5em;
 }
 #button-black {
     background-color: var(--dark);
