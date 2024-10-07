@@ -53,16 +53,24 @@
     border: 1px solid red;
 }
 
-button {
-    /* background-color: white; */
-    border: none;
-    /* padding: 10px; */
+.button {
+    background-color: white;
+    padding: 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: .8em;
     margin: 4px 2px;
     border-radius: 20px;
+    box-shadow: none;
+    transition: box-shadow .5s;
+}
+.button:hover{
+    color:var(--text-blue);
+    box-shadow: 0px 15px 20px black;
+}
+html{
+    scroll-behavior: smooth;
 }
 body{
     font-family: Whitney, 'Helvetica Neue', Arial, Helvetica, sans-serif;
@@ -82,7 +90,15 @@ ul {
     display: flex;
     gap: 25px;
 }
-
+header li{
+    padding: 0px 20px;
+}
+li{
+    text-decoration: none;
+}
+li:hover{
+    text-decoration: underline;
+}
 a {
     text-decoration: none;
 }
@@ -116,6 +132,7 @@ a:visited {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 .gap-standard {
     gap: var(--padding-standard);
@@ -128,7 +145,9 @@ a:visited {
 .space-center {
     justify-content: center;
 }
-
+.ali-items-center{
+    align-items: center;
+}
 .ali-center {
     align-content: center;
 }
@@ -153,33 +172,21 @@ a:visited {
     max-width: 800px;
 }
 
-/* panel */
-.img-panel {
-    width: 60%;
-}
-
-.txt-panel {
-    width: 40%;
-}
-
 /* body */
-
+body .button{
+    font-size: 1em;
+    font-weight: 550;
+}
 /* header */
 .container-header {
     padding: 20px
 }
 #log-in-header{
     background-color: white;
-    border: none;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: .9em;
-    margin: 0;
-    border-radius: 30px;
     color: black;
-
+}
+#log-in-header:hover{
+    color: var(--text-blue);
 }
 /* main */
 .img-hero {
@@ -188,24 +195,23 @@ a:visited {
     background-repeat: no-repeat;
 }
 
+/* panel */
+.img-panel {
+    width: 60%;
+}
+.img-panel img{
+    width: 100%;
+}
+.txt-panel {
+    width: 40%;
+}
 #button-black {
     background-color: var(--dark);
-    padding: 10px;
     color: white;
 }
-#download-mac-white{
-    padding: 10px;
-}
+
 #download-mac{
     background-color: var(--text-blue);
-    border: none;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: .8em;
-    margin: 4px 2px;
-    border-radius: 20px;
     color: white;
 }
 .background-star{
@@ -235,13 +241,5 @@ a:visited {
 }
 #sign-in{
     background-color: var(--text-blue);
-    border: none;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: .9em;
-    margin: 0;
-    border-radius: 30px;
     color: white;
 }
