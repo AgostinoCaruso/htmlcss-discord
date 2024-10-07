@@ -109,7 +109,9 @@ a:visited {
 .d-flex {
     display: flex;
 }
-
+.flex-wrap{
+    flex-wrap: wrap;    
+}
 .hero-flex-custom {
     flex-flow: column nowrap;
     justify-content: center;
@@ -250,4 +252,7 @@ body .button{
 #sign-in{
     background-color: var(--text-blue);
     color: white;
+}
+#footer-li-undline{
+    text-decoration: none;
 }
