@@ -8,6 +8,7 @@
 :root {
     --padding-standard: 15px;
     --padding-spacing-section: 100px;
+    --padding-spacing-download: 50px;
     /* color */
     --dark: #23272a;
     --light: #f6f6f6;
@@ -21,6 +22,9 @@
 
 .spacing-between-section {
     padding: var(--padding-spacing-section);
+}
+.spacing-between-download{
+    padding: var(--padding-spacing-download);
 }
 
 /* text */
@@ -57,9 +61,9 @@
     background-color: var(--dark);
 }
 
-/* .debugger {
+.debugger {
     border: 1px solid red;
-} */
+}
 
 .button {
     background-color: white;
@@ -274,6 +278,8 @@ body .button {
 
 /* download-page-main-content */
 .section-panel-download-page {
+    display: flex;
+    flex-wrap: wrap;
     margin: 200px;
     gap: 25px;
 }
