@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* general */
+:root {
+    --padding-standard: 15px;
+    --padding-spacing-section:200px;
+    /* color */
+    --dark: #23272a;
+    --light: #f6f6f6;
+    --blue-bg: #255EE9;
+    --text-blue: #748adb;
+    background-color: gainsboro;
+}
+.spacing-between-section{
+    padding-top: var(--padding-spacing-section);
+}
+/* text */
+.txt-white {
+    color: white;
+}
+.txt-blue{
+    color: var(--text-blue);
+}
+.height-space-img {
+    height: 600px
+}
+.text-align-center{
+    text-align: center;
+}
+/* background */
+.bg-blue {
+    background-color: var(--blue-bg);
+    
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-grey {
+    background-color: var(--light);
+}
+
+.bg-dark {
+    background-color: var(--dark);
+}
+
+.debugger {
+    border: 1px solid red;
+}
+
+button {
+    /* background-color: white; */
+    border: none;
+    /* padding: 10px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .8em;
+    margin: 4px 2px;
+    border-radius: 20px;
+}
+body{
+    font-family: Whitney, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-size: 4em;
+}
+h2{
+    font-size: 3.5em;
+}
+p{
+    font-size: 1.2em;
+    line-height: 2;
+}
+ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+.auto-center {
+    margin: 0 auto;
+}
+
+/* flex */
+.d-flex {
+    display: flex;
+}
+
+.hero-flex-custom {
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.panel-text-flex-custom {
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: var(--padding-standard);
+}
+.tecnology-flex-costum{
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.gap-standard {
+    gap: var(--padding-standard);
+}
+
+.space-bet {
+    justify-content: space-between;
+}
+
+.space-center {
+    justify-content: center;
+}
+
+.ali-center {
+    align-content: center;
+}
+
+.flex-dir-rowrev {
+    flex-direction: row-reverse;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+/* container */
+.container-1200px {
+    max-width: 1400px;
+    /* Clelia ha aggiunto margine e padding */
+    /* margin:0 auto; */
+    /* padding:20px 10px; */
+}
+
+.container-800px {
+    max-width: 800px;
+}
+
+/* panel */
+.img-panel {
+    width: 60%;
+}
+
+.txt-panel {
+    width: 40%;
+}
+
+/* body */
+
+/* header */
+.container-header {
+    padding: 20px
+}
+#log-in-header{
+    background-color: white;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .9em;
+    margin: 0;
+    border-radius: 30px;
+    color: black;
+
+}
+/* main */
+.img-hero {
+    background-image: url("../img/jumbo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#button-black {
+    background-color: var(--dark);
+    padding: 10px;
+    color: white;
+}
+#download-mac-white{
+    padding: 10px;
+}
+#download-mac{
+    background-color: var(--text-blue);
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .8em;
+    margin: 4px 2px;
+    border-radius: 20px;
+    color: white;
+}
+.background-star{
+    width: 400px;
+    background-image: url("../img/stars.svg");
+    background-size: contain;    
+    background-repeat: no-repeat;
+}
+.background-wave{
+    background-image: url("../img/wave.svg");
+}
+.space-bottom-main-footer{
+    padding-bottom: var(--padding-spacing-section);
+}
+/* footer */
+.footer-top-flex{
+    padding: 30px;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.purple-line-footer{
+    border-bottom: 1px solid var(--text-blue);
+}
+.footer-bottom{
+    padding: var(--padding-standard);
+    padding-bottom: 50px;
+}
+#sign-in{
+    background-color: var(--text-blue);
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .9em;
+    margin: 0;
+    border-radius: 30px;
+    color: white;
+}
