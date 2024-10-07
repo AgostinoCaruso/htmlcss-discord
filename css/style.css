@@ -275,11 +275,8 @@ body .button {
 }
 .panel-download-page{
     background-color: var(--light);
-    gap: 5px;
+    /* gap: 5px; */
     border-radius: 30px;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
 }
 .panel-download-page h2{
     padding-top: 50px;
@@ -289,14 +286,27 @@ body .button {
     height: 600px;
     width: 45%;
     translate: 50px -80px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
 }
 .right-down-panel{
     width: 45%;
     translate: 50px 80px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
 }
 .last-panel-text{
+    translate: 50px -100px;
     width: 45%;
+    font-size: .8em;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
+
 .ios-panel-download-page{
     background-image: url("../img/download-page/ios-discord.svg");
     background-repeat: no-repeat;
