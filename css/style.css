@@ -253,7 +253,51 @@ body .button {
 .hero-download-page{
     padding: 150px;
 }
+.img-panel-download-page-hero {
+    width: 50%;
+}
+.img-panel-download-page-hero img{
+    width: 100%;
+}
 
+.txt-panel-download-page {
+    width: 50%;
+}
+.txt-panel-download-page h2{
+    line-height: .85;
+    font-size: 3.5em;
+    text-transform: uppercase;
+}
+/* download-page-main-content */
+.section-panel-download-page{
+    margin: 200px;
+    gap: 25px;
+}
+.panel-download-page{
+    background-color: var(--light);
+    gap: 5px;
+    border-radius: 30px;
+    display: flex;
+    flex-flow: column nowrap;
+    
+}
+.left-up-panel{
+    height: 600px;
+    width: 45%;
+    translate: 50px -80px;
+}
+.right-down-panel{
+    width: 45%;
+    translate: 50px 80px;
+}
+.last-panel-text{
+    width: 45%;
+}
+.img-panel-download-page{
+    background-image: url("../img/download-page/ios-discord.svg");
+    background-repeat: no-repeat;
+    height: 480px;
+}
 /* panel */
 .img-panel {
     width: 60%;
@@ -266,11 +310,12 @@ body .button {
 .txt-panel {
     width: 40%;
 }
-
 .button-hero .button {
     font-size: 1.5em;
 }
-
+.button-hero-download-page .button{
+    font-size: 1em;
+}
 #button-black {
     background-color: var(--dark);
     color: white;
