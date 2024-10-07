@@ -57,9 +57,9 @@
     background-color: var(--dark);
 }
 
-.debugger {
+/* .debugger {
     border: 1px solid red;
-}
+} */
 
 .button {
     background-color: white;
@@ -279,7 +279,11 @@ body .button {
     border-radius: 30px;
     display: flex;
     flex-flow: column nowrap;
-    
+    align-items: center;
+}
+.panel-download-page h2{
+    padding-top: 50px;
+    font-size: 2.5em;
 }
 .left-up-panel{
     height: 600px;
@@ -293,9 +297,39 @@ body .button {
 .last-panel-text{
     width: 45%;
 }
-.img-panel-download-page{
+.ios-panel-download-page{
     background-image: url("../img/download-page/ios-discord.svg");
     background-repeat: no-repeat;
+    background-position-x: 50px;
+    background-position-y: 100px;
+    width: 100%;
+    height: 480px;
+}
+.android-img-download-page{
+    background-image: url("../img/download-page/android-discord.svg");
+    background-repeat: no-repeat;
+    background-position-x: 50px;
+    background-position-y: 100px;
+    width: 100%;
+    height: 480px;
+}
+.linux-panel-download-page{
+    background-image: url("../img/download-page/linux-discord.svg");
+    background-repeat: no-repeat;
+    background-position-x: 50px;
+    background-position-y: 100px;
+    width: 100%;
+    height: 480px;
+}
+#linux-fix-pos{
+    background-position-x: 100px;
+}
+.mac-panel-download-page{
+    background-image: url("../img/download-page/mac-discord.svg");
+    background-repeat: no-repeat;
+    background-position-x: 50px;
+    background-position-y: 100px;
+    width: 100%;
     height: 480px;
 }
 /* panel */
