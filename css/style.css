@@ -60,10 +60,10 @@
 .bg-dark {
     background-color: var(--dark);
 }
-
+/* 
 .debugger {
     border: 1px solid red;
-}
+} */
 
 .button {
     background-color: white;
