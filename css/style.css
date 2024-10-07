@@ -57,9 +57,9 @@
     background-color: var(--dark);
 }
 
-/* .debugger {
+.debugger {
     border: 1px solid red;
-} */
+}
 
 .button {
     background-color: white;
@@ -247,6 +247,11 @@ body .button {
 
 .meet-padding-none {
     padding-top: 0px;
+}
+
+/* main-download-page */
+.hero-download-page{
+    padding: 150px;
 }
 
 /* panel */
